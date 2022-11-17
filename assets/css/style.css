@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+h1,h2{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/** Header **/
+header {
+    letter-spacing: 3px;
+    font-size: 120%;
+    line-height: 75px;
+    color: white;
+}
+header h1{
+    float: left;
+    margin-left: 25px;
+}
+header li{
+    float:right;
+    margin-right: 25px;
+    list-style-type: none;
+}
+#img{
+    background: url(../images/pexels-daniel-sarmiento-13912832.jpg);
+    height: 80px;
+}
+.active{
+    border-bottom: 1px solid green;
+}
+
+/** Welcome Page **/
+
+#main{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#main p{
+    font-size: 130%;
+}
+#main-bg{
+    height: 600px;
+    width: 100%;
+    background: url(../images/pexels-feyza-yıldırım-14367476.jpg) no-repeat center center;
+    background-size: 100%;
+}
+#why-donate{
+    width: 450px;
+    top: 150px;
+    left: 70px;
+    position: absolute;
+    background-image: url(../images/pexels-rudolf-jakkel-418831.jpg);
+    background-size: 100%;
+}
+#why-donate h2{
+    text-align: center;
+}
+#why-here{
+    width: 450px;
+    top: 150px;
+    right: 70px;
+    position: absolute;
+    background-image: url(../images/pexels-rudolf-jakkel-418831.jpg);
+    background-size: 100%;
+}
+#why-here h2{
+    text-align: center;
+}
+#press-here{
+    width: 300px;
+    bottom: 100px;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+}
+#donate-button{
+    font-size: 210%;
+    border: 1px solid #3a3a3a;
+    width: 150px;
+    background-color: green;
+}
+
+/** About Us Page **/
+
+#about-us{
+    height: 600px;
+    width: 100%;
+}
+#about{
+    width: 100%;
+    top: 30px;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+}
+#about p{
+    font-size: 130%;
+}
+#info{
+    width: 100%;
+    left: 30px;
+    top: 100px;
+    position: relative;
+}
