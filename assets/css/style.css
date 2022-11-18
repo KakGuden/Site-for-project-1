@@ -24,7 +24,7 @@ header {
     letter-spacing: 3px;
     font-size: 120%;
     line-height: 7.5rem;
-    color: #fff;
+    color: #00194c;
     display: flex;
 }
 header ul{
@@ -38,7 +38,7 @@ header li{
     padding-right: 1rem;
 }
 #img{
-    background: url(../images/pexels-daniel-sarmiento-13912832.jpg);
+    background: #9f540f;
     height: 8rem;
 }
 .active{
@@ -63,6 +63,7 @@ header li{
     background-size: 100%;
 }
 #why-donate{
+    color: #fff;
     width: 45rem;
     height: 30rem;
     top: 15rem;
@@ -96,26 +97,29 @@ header li{
     margin: 5px;
 }
 #press-here{
-    width: 30rem;
+    width: 15rem;
     bottom: 10rem;
     margin: 0px auto;
     text-align: center;
     position: relative;
 }
 #donate-button{
+    padding: auto;
     font-size: 210%;
     border: 1px solid #3a3a3a;
-    width: 15rem;
-    background-color: green;
+    background-color: #9f540f;
+    color: #00194c;
 }
 
 /** About Us Page **/
 
 #about-us{
+    background-color: #6d9461;
     height: 60rem;
     width: 100%;
 }
 #about{
+    
     width: 100%;
     top: 3rem;
     margin: 0px auto;

@@ -24,8 +24,18 @@ I plan on making a home page with basic information about the site and places to
 ## Design Choices
 
 ### The Colors
+#00194c text
+#9f540f bg
+#553261 text
+#6d9461 bg
 
 ### Font choices
 To make it all alittle diffrent I used fonts from [Google Fonts](https://fonts.google.com/ "Google Fonts") and decided to go for [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?query=rob "Roboto Slab font") for the basic text as I feel it looks clean and just sits right with me while I went with [Roboto](https://fonts.google.com/specimen/Roboto "Roboto font") for my h1,h2 because it goes well with Roboto Slab and has the same clean look that I
 
 
+# Features
+
+## Existing Features
+
+### Nav Bar
+Nav bar works and will take you to the place you press
