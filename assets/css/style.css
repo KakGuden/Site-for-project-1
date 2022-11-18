@@ -49,7 +49,10 @@ header li{
     height: 10vh;
 }
 .active{
-    border-bottom: 1px solid rgb(0, 128, 0);
+    border-bottom: 1px solid #fff;
+}
+header li:hover{
+    color: #6d9461;
 }
 
 /** Welcome Page **/
@@ -63,7 +66,7 @@ header li{
 #main p{
     font-size: 130%;
 }
-#main-bg{
+#main-bg,#donation-section{
     height: 90vh;
     width: 100%;
     background: url(../images/pexels-rudolf-jakkel-418831.jpg) no-repeat center center;
@@ -118,6 +121,22 @@ header li{
     border: 1px solid #3a3a3a;
     background-color: #9f540f;
     color: #072f7e;
+}
+
+/** Donation page**/
+
+#donation-section h2 {
+    text-align: center;
+}
+#donation-section div{
+    text-align: center;
+}
+#donation-form{
+    width: 20rem;
+    border: 1px solid #000000;
+    background-color: #6d9461;
+    margin: auto;
+    margin-top: 15rem;
 }
 
 /** About Us Page **/
