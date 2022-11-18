@@ -61,9 +61,9 @@ header li{
     background-size: 100%;
 }
 #why-donate{
-    width: 450px;
-    top: 150px;
-    left: 70px;
+    width: 45rem;
+    top: 15rem;
+    left: 7rem;
     position: absolute;
     background-image: url(../images/pexels-rudolf-jakkel-418831.jpg);
     background-size: 100%;
@@ -72,9 +72,9 @@ header li{
     text-align: center;
 }
 #why-here{
-    width: 450px;
-    top: 150px;
-    right: 70px;
+    width: 45rem;
+    top: 15rem;
+    right: 7rem;
     position: absolute;
     background-image: url(../images/pexels-rudolf-jakkel-418831.jpg);
     background-size: 100%;
@@ -83,8 +83,8 @@ header li{
     text-align: center;
 }
 #press-here{
-    width: 300px;
-    bottom: 100px;
+    width: 30rem;
+    bottom: 10rem;
     margin: 0px auto;
     text-align: center;
     position: relative;
@@ -92,19 +92,19 @@ header li{
 #donate-button{
     font-size: 210%;
     border: 1px solid #3a3a3a;
-    width: 150px;
+    width: 15rem;
     background-color: green;
 }
 
 /** About Us Page **/
 
 #about-us{
-    height: 600px;
+    height: 60rem;
     width: 100%;
 }
 #about{
     width: 100%;
-    top: 30px;
+    top: 3rem;
     margin: 0px auto;
     text-align: center;
     position: relative;
@@ -114,7 +114,7 @@ header li{
 }
 #info{
     width: 100%;
-    left: 30px;
-    top: 100px;
+    left: 3rem;
+    top: 10rem;
     position: relative;
 }
