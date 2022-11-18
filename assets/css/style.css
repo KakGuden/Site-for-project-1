@@ -24,7 +24,7 @@ header {
     letter-spacing: 3px;
     font-size: 120%;
     line-height: 7.5rem;
-    color: #072f7e;
+    color: #9f540f;
     display: flex;
     font-weight: bolder;
 }
@@ -39,7 +39,7 @@ header li{
     padding-right: 2rem;
 }
 #img{
-    background: #9f540f;
+    background: #000000;
     height: 10vh;
 }
 .active{
@@ -152,19 +152,20 @@ header li{
 /** Footer **/
 
 footer{
-    height: 5vh;
+    height: 10vh;
     background-color: #9f540f;
-    display: flex;
-    padding: 1rem;
     width: 100%;
-    align-items: center;
-    border: 1px solid #3a3a3a;
+    text-align: center; 
 }
 footer a{
     margin: 10%;
 }
 #links{
+    padding-top: 1.5rem;
     width: 100%;
-    text-align: center;
-    font-size: 200%
+    font-size: 150%
+}
+footer h4{
+    font-size: 1rem;
+    padding-top: 0.5rem;
 }
