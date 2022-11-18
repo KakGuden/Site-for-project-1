@@ -132,9 +132,22 @@ header li{
 #about p{
     font-size: 130%;
 }
+#about-detail{
+    display:flex ;
+}
 #info{
-    width: 60rem;
-    left: 3rem;
+    width: 47%;
+    padding-left: 3%;
     top: 8rem;
     position: relative;
 }
+#personal{
+    width: 47%;
+    padding-right: 3%;
+    top: 8rem;
+    text-align: right;
+    position: relative;
+}
+
+/** Footer **/
+
