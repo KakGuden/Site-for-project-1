@@ -25,15 +25,17 @@ header {
     font-size: 120%;
     line-height: 7.5rem;
     color: #fff;
+    display: flex;
 }
-header h1{
-    float: left;
-    margin-left: 2.5rem;
+header ul{
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 }
 header li{
-    float:right;
-    margin-right: 2.5rem;
-    list-style-type: none;
+    padding-right: 1rem;
 }
 #img{
     background: url(../images/pexels-daniel-sarmiento-13912832.jpg);
