@@ -188,7 +188,7 @@ footer h4{
         padding: 0rem;
         margin: 0px;
     }
-    
+
 }
 @media (max-width: 900px) {
     header h1{
@@ -200,18 +200,18 @@ footer h4{
         
     }
     #why-donate{
-        width: 100%;
-        left: 0;
-        top: 0;
-        height: 30%;
+        width: 80%;
+        left: 10%;
+        top: 5%;
+        height: 40%;
         display: block;
     }
     #why-here{
         display: block;
-        width: 100%;
-        left: 0;
-        top: 25rem;
-        height: 30%;
+        width: 80%;
+        left: 10%;
+        top: 28rem;
+        height: 35%;
     }
     #about{
         width: 100%;
@@ -224,5 +224,56 @@ footer h4{
     }
     #about-us{
      height: 40rem;
+    }
+}
+@media (max-width: 600px) {
+    header{
+        letter-spacing: 0;
+        line-height: 0;
+    }
+    header h1{
+       line-height: 5rem;
+       left: 10rem;
+    }
+    header ul{
+        line-height: 10rem;
+        right: 0;
+    }
+    #why-here{
+        margin: auto;
+        height: 25rem;
+        top: 30rem;
+        width: 100%;
+        left: 0;
+        font-size: 80%;
+    }
+    #why-donate{
+        height: 25rem;
+        width: 100%;
+        left: 0;
+        top: 10;
+        font-size: 80%;
+    }
+    #donate-button{
+        display: none;
+    }
+    #about-us{
+        height: 60rem;
+    }
+    #about p{
+        font-size: 100%;
+    }  
+    #info{
+        left: 25%;
+        top: 5rem;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    #personal{
+        top: 25rem;
+        right: 25%  ;
+        width: 100%;
+        padding-left: 0;
     }
 }
