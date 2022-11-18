@@ -127,6 +127,8 @@ header li:hover{
 
 #donation-section h2 {
     text-align: center;
+    font-size: 300%;
+    color: #3169d8;
 }
 #donation-section div{
     text-align: center;
@@ -134,9 +136,12 @@ header li:hover{
 #donation-form{
     width: 20rem;
     border: 1px solid #000000;
-    background-color: #6d9461;
+    background-color: rgb(109, 148, 97, 0.7);
     margin: auto;
     margin-top: 15rem;
+}
+#submit{
+    font-size: 110%;
 }
 
 /** About Us Page **/
