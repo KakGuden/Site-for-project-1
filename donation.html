@@ -25,9 +25,17 @@
                 <h2>Make a donation</h2>
                 <form action="">
                     <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full-name">
+                    <input type="text" id="full-name" name="full-name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
                     <label for="card-number">Card number</label>
-                    <input type="text" id="card-number" name="card-number">
+                    <input type="tel" id="card-number" name="card-number" maxlength="16" required>
+                    <label for="date-month">Expiry date</label>
+                    <input type="tel" id="date-month" name="date-month" maxlength="2">
+                    <label for="date-year">/</label>
+                    <input type="tel" id="date-year" name="date-year" maxlength="2">
+                    <label for="security-code">Security Code</label>
+                    <input type="tel" id="security-code" name="security-code" maxlength="3">
                 </form>
             </div>
         </section>
