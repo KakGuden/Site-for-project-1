@@ -24,7 +24,7 @@ header {
     letter-spacing: 3px;
     font-size: 120%;
     line-height: 7.5rem;
-    color: #00194c;
+    color: #072f7e;
     display: flex;
     font-weight: bolder;
 }
@@ -60,7 +60,7 @@ header li{
 #main-bg{
     height: 90vh;
     width: 100%;
-    background: url(../images/pexels-feyza-yıldırım-14367476.jpg) no-repeat center center;
+    background: url(../images/pexels-rudolf-jakkel-418831.jpg) no-repeat center center;
     background-size: 100%;
 }
 #why-donate{
@@ -70,11 +70,12 @@ header li{
     top: 15rem;
     left: 7rem;
     position: absolute;
-    background-image: url(../images/pexels-rudolf-jakkel-418831.jpg);
+    background-color: rgb(159, 84, 15, 0.9);
     background-size: 100%;
-    border: #3a3a3a solid 1px;
+    border: #9f540f solid 1px;
     border-radius: 15%;
     text-align: center;
+    color: #072f7e;
 }
 #why-donate p{
     padding: 0.5rem;
@@ -87,11 +88,12 @@ header li{
     top: 15rem;
     right: 7rem;
     position: absolute;
-    background-image: url(../images/pexels-rudolf-jakkel-418831.jpg);
+    background-color: rgb(159, 84, 15, 0.9);
     background-size: 100%;
     border: #3a3a3a solid 1px;
     border-radius: 15%;
     text-align: center;
+    color: #072f7e;
 }
 #why-here p{
     padding: 0.5rem;
@@ -109,19 +111,19 @@ header li{
     font-size: 210%;
     border: 1px solid #3a3a3a;
     background-color: #9f540f;
-    color: #00194c;
+    color: #072f7e;
 }
 
 /** About Us Page **/
 
 #about-us{
     background-color: #6d9461;
-    height: 60rem;
+    height: 30rem;
     width: 100%;
 }
 #about{
     
-    width: 100%;
+    width: 80%;
     top: 3rem;
     margin: 0px auto;
     text-align: center;
@@ -133,6 +135,6 @@ header li{
 #info{
     width: 60rem;
     left: 3rem;
-    top: 10rem;
+    top: 8rem;
     position: relative;
 }
