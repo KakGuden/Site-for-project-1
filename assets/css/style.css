@@ -28,6 +28,12 @@ header {
     display: flex;
     font-weight: bolder;
 }
+header h1{
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    flex-direction: row;
+}
 header ul{
     position: absolute;
     right: 1rem;
@@ -232,12 +238,16 @@ footer h4{
         line-height: 0;
     }
     header h1{
+        left: 27%;
+    }
+    
+    header a{
        line-height: 5rem;
-       left: 10rem;
     }
     header ul{
         line-height: 10rem;
         right: 0;
+        left: 27%;
     }
     #why-here{
         margin: auto;
@@ -275,5 +285,6 @@ footer h4{
         right: 25%  ;
         width: 100%;
         padding-left: 0;
+        text-align: center;
     }
 }
