@@ -61,7 +61,7 @@ header li{
     height: 90vh;
     width: 100%;
     background: url(../images/pexels-rudolf-jakkel-418831.jpg) no-repeat center center;
-    background-size: 100%;
+    background-size: cover;
 }
 #why-donate{
     color: #fff;
@@ -168,4 +168,57 @@ footer a{
 footer h4{
     font-size: 1rem;
     padding-top: 0.5rem;
+}
+
+/** Diffrent sized screens **/
+
+@media (max-width: 1100px) {
+    #why-donate{
+        width: 40%;
+    }
+    #why-donate p{
+        padding: 0rem;
+        margin: 0px;
+    }
+    #why-here{
+        width: 40%;
+        height: 40%;
+    }
+    #why-here p{
+        padding: 0rem;
+        margin: 0px;
+    }
+}
+@media (max-width: 900px) {
+    header h1{
+        font-size: 100%
+        
+    }
+    header li{
+        font-size: 65%;
+        
+    }
+    #why-donate{
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 30%;
+        display: block;
+    }
+    #why-here{
+        display: block;
+        width: 100%;
+        left: 0;
+        top: 25rem;
+        height: 30%;
+    }
+    #about{
+        width: 100%;
+    }
+    #info{
+        top: 2.5rem;
+    }
+    #personal{
+        top: 2.5rem;
+    }
 }
