@@ -188,6 +188,7 @@ footer h4{
         padding: 0rem;
         margin: 0px;
     }
+    
 }
 @media (max-width: 900px) {
     header h1{
@@ -215,10 +216,13 @@ footer h4{
     #about{
         width: 100%;
     }
-    #info{
-        top: 2.5rem;
+    #main{
+        height: 60rem;
     }
-    #personal{
-        top: 2.5rem;
+    #main-bg{
+        height: 60rem;
+    }
+    #about-us{
+     height: 40rem;
     }
 }
