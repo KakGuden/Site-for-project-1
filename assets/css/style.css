@@ -64,15 +64,24 @@ header li{
 }
 #why-donate{
     width: 45rem;
+    height: 30rem;
     top: 15rem;
     left: 7rem;
     position: absolute;
     background-image: url(../images/pexels-rudolf-jakkel-418831.jpg);
     background-size: 100%;
+    border: #3a3a3a solid 1px;
+    border-radius: 15%;
 }
 #why-donate h2{
     text-align: center;
 }
+#why-donate p{
+    text-align: center;
+    padding: 0.5rem;
+    margin: 5px;
+}
+
 #why-here{
     width: 45rem;
     top: 15rem;
