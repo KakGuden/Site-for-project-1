@@ -251,16 +251,14 @@ footer h4{
     }
     #why-here{
         margin: auto;
-        height: 25rem;
+        height: 20rem;
         top: 30rem;
-        width: 100%;
-        left: 0;
+        
         font-size: 80%;
     }
     #why-donate{
-        height: 25rem;
-        width: 100%;
-        left: 0;
+        height: 22rem;
+      
         top: 10;
         font-size: 80%;
     }
@@ -286,5 +284,25 @@ footer h4{
         width: 100%;
         padding-left: 0;
         text-align: center;
+    }
+}
+@media (max-width: 400px){
+    header h1,header ul{
+        left: 18%;
+    }
+    #why-here,#why-donate{
+        height: 25rem;
+        width: 100%;
+        left: 0;
+    }
+    #about-detail{
+        display: block;
+    }
+    #personal,#info{
+        right: 0;
+        left: 0;
+    }
+    #personal{
+        top: 10rem;
     }
 }
