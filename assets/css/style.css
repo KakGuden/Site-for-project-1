@@ -4,8 +4,12 @@
     padding: 0;
     border: none;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
 }
 h1,h2{
     font-family: 'Roboto', sans-serif;
@@ -19,30 +23,30 @@ a{
 header {
     letter-spacing: 3px;
     font-size: 120%;
-    line-height: 75px;
-    color: white;
+    line-height: 7.5rem;
+    color: #fff;
 }
 header h1{
     float: left;
-    margin-left: 25px;
+    margin-left: 2.5rem;
 }
 header li{
     float:right;
-    margin-right: 25px;
+    margin-right: 2.5rem;
     list-style-type: none;
 }
 #img{
     background: url(../images/pexels-daniel-sarmiento-13912832.jpg);
-    height: 80px;
+    height: 8rem;
 }
 .active{
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid rgb(0, 128, 0);
 }
 
 /** Welcome Page **/
 
 #main{
-    height: 600px;
+    height: 60rem;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -51,7 +55,7 @@ header li{
     font-size: 130%;
 }
 #main-bg{
-    height: 600px;
+    height: 60rem;
     width: 100%;
     background: url(../images/pexels-feyza-yıldırım-14367476.jpg) no-repeat center center;
     background-size: 100%;
