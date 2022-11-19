@@ -35,7 +35,7 @@
             <p>Help us make make sure everyone gets the help they need</p>
         </div>
         <div id="press-here">
-            <h1 id="donate-button"><a href="#donation-section" aria-label="Takes you to the Donation section (in same tab)">Donate</a></h1>
+            <h3 id="donate-button"><a href="#donation-section" aria-label="Takes you to the Donation section (in same tab)">Donate</a></h3>
         </div>
     </section>
     
@@ -58,7 +58,7 @@
     </div>
     </section>
     <section id="donation-section">
-            <h2>Make a donation <hr> to help those who need it</h2>
+            <h2>Make a donation to help those who need it</h2>
         <div id="donation-div">
             <div id="help-form">
                 
@@ -83,7 +83,7 @@
                     <label for="security-code">Security Code</label>
                     <input type="tel" id="security-code" name="security-code" maxlength="3" size="1" required>
                     <hr>
-                    <label for="amount">Seclect Amount</label>
+                    <p>Select Amount</p>
                     <hr>
                     <label for="2€">2€</label>
                     <input type="radio" class="amount" id="2€" name="amount" required>
@@ -98,7 +98,7 @@
                         <div style="text-align: center;">
                           <div style="margin-bottom: 1.25rem;">
                             <p>PayPal Donation</p>
-                            <select id="item-options"><option value="2 Euro" price="2">2 Euro - 2 EUR</option><option value="5 Euro" price="5">5 Euro - 5 EUR</option><option value="10 Euro" price="10">10 Euro - 10 EUR</option></select>
+                            <select id="item-options"><option value="2">2 EUR</option><option value="5 Euro">5 Euro</option><option value="10 Euro" >10 Euro</option></select>
                             <select style="visibility: hidden" id="quantitySelect"></select>
                           </div>
                         <div id="paypal-button-container"></div>
@@ -128,7 +128,7 @@
                         },
                         createOrder: function(data, actions) {
                           var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
-                          var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+                          var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("value"));
                           var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
                           if(quantitySelect.options.length > 0) {
                             quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
@@ -222,7 +222,7 @@
                     <hr>
                     <label for="message">Your Message</label>
                     <hr>
-                    <textarea class="inputs" name="message" id="message" rows="5%"></textarea required>
+                    <textarea class="inputs" name="message" id="message" rows="5" required></textarea>
                     <hr>
                     <input value="Send" type="submit" id="send" name="send">
                 </form>

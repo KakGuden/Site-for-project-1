@@ -112,7 +112,7 @@ header li:hover{
     position: relative;
 }
 #donate-button{
-    padding: auto;
+    padding: 0.5rem;
     font-size: 210%;
     border: 1px solid #3a3a3a;
     background-color: #9f540f;
@@ -326,7 +326,7 @@ footer h4{
     #why-donate{
         width: 80%;
         left: 10%;
-        top: 5%;
+        top: 15%;
         height: 40%;
         display: block;
     }
@@ -334,8 +334,11 @@ footer h4{
         display: block;
         width: 80%;
         left: 10%;
-        top: 28rem;
+        top: 35rem;
         height: 35%;
+    }
+    #donate-button{
+        display: none;
     }
     #help-text{
         font-size: 110%;
@@ -376,14 +379,12 @@ footer h4{
     #why-here{
         margin: auto;
         height: 20rem;
-        top: 30rem;
+        top: 35rem;
         
         font-size: 80%;
     }
     #why-donate{
         height: 22rem;
-      
-        top: 10;
         font-size: 80%;
     }
     #donation-div{
@@ -402,9 +403,7 @@ footer h4{
     #donation-section{
         height: 100rem;
     }
-    #donate-button{
-        display: none;
-    }
+
     #about-us{
         height: 60rem;
     }
