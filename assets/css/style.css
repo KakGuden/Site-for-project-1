@@ -210,6 +210,22 @@ header li:hover{
     position: relative;
 }
 
+/** Contact section **/
+
+#contact-section{
+    height: 40rem;
+    background-color: #6d9461;
+    text-align: center;
+    align-items: center;
+}
+#contact-section h2{
+    font-size: 250%
+}
+#contact-section div{
+    background-color: #fff;
+    width: 50rem;
+}
+
 /** Footer **/
 
 footer{
