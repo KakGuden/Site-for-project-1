@@ -181,6 +181,8 @@ header li:hover{
     background-color: #6d9461;
     height: 30rem;
     width: 100%;
+    outline: #072f7e 1rem solid;
+    outline-offset: -1rem;
 }
 #about{
     
@@ -216,6 +218,9 @@ header li:hover{
     height: 60rem;
     background-color: #6d9461;
     text-align: center;
+    outline: #072f7e 1rem solid;
+    outline-offset: -1rem;
+    padding-top: 1rem;
 }
 #contact-section h2{
     font-size: 250%
