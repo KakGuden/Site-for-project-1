@@ -37,5 +37,12 @@ To make it all alittle diffrent I used fonts from [Google Fonts](https://fonts.g
 
 ## Existing Features
 
-### Nav Bar
-Nav bar works and will take you to the place you press
+### Nav Bar/Header
+Navigation bar works as intended and responds to diffrent screen sizes and stays on the top of your screen at all times
+(readme-pic/header-nav.png)
+Also reacts to hovering as to make it easier to see what you are about to click
+(readme-pic/nav-hover-png)
+
+### Home Page
+
+The home page 
