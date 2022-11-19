@@ -53,6 +53,7 @@ header li{
 }
 header li:hover{
     color: #6d9461;
+    list-style: disc;
 }
 
 /** Welcome Page **/
@@ -66,7 +67,7 @@ header li:hover{
 #main p{
     font-size: 130%;
 }
-#main-bg,#donation-section{
+#main-bg{
     height: 90vh;
     width: 100%;
     background: url(../images/pexels-rudolf-jakkel-418831.jpg) no-repeat center center;
@@ -125,6 +126,12 @@ header li:hover{
 
 /** Donation page**/
 
+#donation-section{
+    height: 90vh;
+    width: 100%;
+    background: url(../images/pexels-ahmed-akacha-6929741.jpg) no-repeat center center;
+    background-size: cover;
+}
 #donation-section h2 {
     text-align: center;
     font-size: 300%;
@@ -134,11 +141,13 @@ header li:hover{
     text-align: center;
 }
 #donation-form{
-    width: 20rem;
+    font-size: 120%;
+    width: 25rem;
     border: 1px solid #000000;
+    border: rgb(0,0,0,.3) 1rem solid;
     background-color: rgb(109, 148, 97, 0.7);
-    margin: auto;
-    margin-top: 15rem;
+    margin-left: 10%;
+    margin-top: 3rem;
 }
 #submit{
     font-size: 110%;

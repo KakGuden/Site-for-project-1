@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Charity Randomiser</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
     <nav>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="dontation.html"></a>Donations</li>
-            <li><a href="contact.html"></a>Contact Us</li>
+            <li><a href="donation.html">Donations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
     </header>
@@ -35,9 +35,10 @@
             <p>Help us make make sure everyone gets the help they need</p>
         </div>
         <div id="press-here">
-            <h1 id="donate-button"><a href="dontation.html">Donate</a></h1>
+            <h1 id="donate-button"><a href="donation.html">Donate</a></h1>
         </div>
     </section>
+    
     <section id="about-us">
         <div id="about">
             <h2>About Us</h2>
@@ -47,14 +48,156 @@
     <div id="about-detail">
         <div id="info">
             <h3>Information</h3>
-            <p>We only pick from non profit charitys that are confimed to be legit</p>
-            <p>Donations are sent within 1 day of it being made with optional receipt from the charity it was donated to</p>
+            <p>We only pick from non profit charitys that are confimed to be legit.</p>
+            <p>Donations are sent within 1 day of it being made.</p>
         </div>
         <div id="personal">
             <h3>Reason for creating this site</h3>
-            <p>My problem with charitys is that there are so many and so much to research about them and no matter how much I look into it I always leave with a feeling of guilt of picking one cause over another</p>
+            <p>My problem with charitys is that there are so many and so much to research about them and no matter how much I look into it I always leave with a feeling of guilt of picking one cause over another.</p>
         </div>
     </div>
+    </section>
+    <section id="donation-section">
+        <h2>Make a donation <hr> to help those who need it</h2>
+        <div>
+            
+            <form id="donation-form" action="donated.html" method="get">
+                <label for="full-name">Full Name</label>
+                <hr>
+                <input type="text" id="full-name" name="full-name" required>
+                <hr>
+                <label for="email">Email</label>
+                <hr>
+                <input type="email" id="email" name="email" required>
+                <hr>
+                <label for="card-number">Card number</label>
+                <hr>
+                <input type="tel" id="card-number" name="card-number" maxlength="16" required>
+                <hr>
+                <label for="date-month">Expiry date</label>
+                <input type="tel" id="date-month" name="date-month" maxlength="2" size="1" required>
+                <label for="date-year">/</label>
+                <input type="tel" id="date-year" name="date-year" maxlength="2" size="1" required>
+                <hr>
+                <label for="security-code">Security Code</label>
+                <input type="tel" id="security-code" name="security-code" maxlength="3" size="1" required>
+                <hr>
+                <label for="amount">Seclect Amount</label>
+                <hr>
+                <label for="2€">2€</label>
+                <input type="radio" class="amount" id="2€" name="amount" required>
+                <label for="5€">5€</label>
+                <input type="radio" class="amount" id="5€" name="amount">
+                <label for="10€">10€</label>
+                <input type="radio" class="amount" id="10€" name="amount">
+                <hr>
+                <input type="submit" id="submit" name="submit" value="Donate">
+                <hr>
+                <div id="smart-button-container">
+                    <div style="text-align: center;">
+                      <div style="margin-bottom: 1.25rem;">
+                        <p>PayPal Donation</p>
+                        <select id="item-options"><option value="2 Euro" price="2">2 Euro - 2 EUR</option><option value="5 Euro" price="5">5 Euro - 5 EUR</option><option value="10 Euro" price="10">10 Euro - 10 EUR</option></select>
+                        <select style="visibility: hidden" id="quantitySelect"></select>
+                      </div>
+                    <div id="paypal-button-container"></div>
+                    </div>
+                  </div>
+                  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+                  <script>
+                    function initPayPalButton() {
+                      var shipping = 0;
+                      var itemOptions = document.querySelector("#smart-button-container #item-options");
+                  var quantity = parseInt();
+                  var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+                  if (!isNaN(quantity)) {
+                    quantitySelect.style.visibility = "visible";
+                  }
+                  var orderDescription = 'Donations';
+                  if(orderDescription === '') {
+                    orderDescription = 'Item';
+                  }
+                  paypal.Buttons({
+                    style: {
+                      shape: 'rect',
+                      color: 'blue',
+                      layout: 'vertical',
+                      label: 'paypal',
+                      
+                    },
+                    createOrder: function(data, actions) {
+                      var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+                      var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+                      var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+                      if(quantitySelect.options.length > 0) {
+                        quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+                      } else {
+                        quantity = 1;
+                      }
+              
+                      tax *= quantity;
+                      tax = Math.round(tax * 100) / 100;
+                      var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+                      priceTotal = Math.round(priceTotal * 100) / 100;
+                      var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+              
+                      return actions.order.create({
+                        purchase_units: [{
+                          description: orderDescription,
+                          amount: {
+                            currency_code: 'EUR',
+                            value: priceTotal,
+                            breakdown: {
+                              item_total: {
+                                currency_code: 'EUR',
+                                value: itemTotalValue,
+                              },
+                              shipping: {
+                                currency_code: 'EUR',
+                                value: shipping,
+                              },
+                              tax_total: {
+                                currency_code: 'EUR',
+                                value: tax,
+                              }
+                            }
+                          },
+                          items: [{
+                            name: selectedItemDescription,
+                            unit_amount: {
+                              currency_code: 'EUR',
+                              value: selectedItemPrice,
+                            },
+                            quantity: quantity
+                          }]
+                        }]
+                      });
+                    },
+                    onApprove: function(data, actions) {
+                      return actions.order.capture().then(function(orderData) {
+                        actions.redirect('donated.html')
+                        // Full available details
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+              
+                        // Show a success message within this page, e.g.
+                        const element = document.getElementById('paypal-button-container');
+                        element.innerHTML = '';
+                        element.innerHTML = '<h3>Thank you for your donation!</h3>';
+              
+                        // Or go to another URL:  actions.redirect('thank_you.html');
+              
+                      });
+                    },
+                    onError: function(err) {
+                      console.log(err);
+                    },
+                  }).render('#paypal-button-container');
+                }
+                initPayPalButton();
+                  </script>
+                
+            </form>
+        </div>
     </section>
     <footer>
         <div id="links">
