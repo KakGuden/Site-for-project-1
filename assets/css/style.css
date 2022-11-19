@@ -184,15 +184,18 @@ header li:hover{
     color: #6d9461;
     text-align: center;
     font-size: 150%;
+    display: flex;
+    justify-content: center;
 }
 #donated h2{
+    margin-top: 1rem;
     font-size: 400%;
 }
 #donated p{
     margin-bottom: 30vh;
 }
 #donated h2,#donated p{
-    background-color: rgba(250, 250, 250, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 #donated a{
     padding: 0.5rem;
