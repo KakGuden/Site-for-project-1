@@ -74,7 +74,6 @@ header li:hover{
     background-size: cover;
 }
 #why-donate{
-    color: #fff;
     width: 45rem;
     height: 30rem;
     top: 15rem;
@@ -87,7 +86,7 @@ header li:hover{
     text-align: center;
     color: #072f7e;
 }
-#why-donate p{
+#why-donate p,#why-here p{
     padding: 0.5rem;
     margin: 5px;
 }
@@ -104,10 +103,6 @@ header li:hover{
     border-radius: 15%;
     text-align: center;
     color: #072f7e;
-}
-#why-here p{
-    padding: 0.5rem;
-    margin: 5px;
 }
 #press-here{
     width: 15rem;
@@ -158,10 +153,26 @@ header li:hover{
 }
 #help-text{
     border: 1px solid #000000;
-    width: 50%;
-    text-align: right;
+    width: 35rem;
     margin-right: 5%;
+    margin-top: 3rem;
+    margin-left: 20%;
+    background-color: rgb(159, 84, 15, 0.9);
+    background-size: 100%;
+    border: #3a3a3a solid 1px;
+    border-radius: 15%;
+    text-align: center;
+    color: #072f7e;
+    font-size: 130%;
 }
+#help-text h3{
+    font-size: 200%;
+    padding: 1rem;
+}
+#help-text p{
+    padding: 0.5rem;
+}
+
 
 /** About Us Page **/
 
