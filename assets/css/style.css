@@ -47,9 +47,9 @@ header li{
 #img{
     background: #000000;
     height: 10vh;
-}
-.active{
-    border-bottom: 1px solid #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
 }
 header li:hover{
     color: #6d9461;
@@ -174,6 +174,31 @@ header li:hover{
     padding: 0.5rem;
 }
 
+/** Completed donation page **/
+
+#donated{
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/pexels-rudolf-jakkel-418831.jpg) no-repeat center center;
+    background-size: cover;
+    color: #6d9461;
+    text-align: center;
+    font-size: 150%;
+}
+#donated h2{
+    font-size: 400%;
+}
+#donated p{
+    margin-bottom: 30vh;
+}
+#donated h2,#donated p{
+    background-color: rgba(250, 250, 250, 0.7);
+}
+#donated a{
+    padding: 0.5rem;
+    background-color: #9f540f;
+    border-radius: 20%;
+}
 
 /** About Us Page **/
 
@@ -246,7 +271,6 @@ header li:hover{
 #send{
     padding: 1rem;
     width: 10rem;
-
 }
 
 /** Footer **/

@@ -10,12 +10,12 @@
 <body>
 <div id="img">
     <header id="header">
-        <h1><a href="index.html">The Charity Randomiser</a></h1>
+        <h1><a href="index.html" aria-label="Takes you to the home page (in same tab)">The Charity Randomiser</a></h1>
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="donation.html">Donations</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html" aria-label="Takes you to the home page (in same tab)">Home</a></li>
+            <li><a href="#donation-section" aria-label="Takes you to the Donation section (in same tab)">Donations</a></li>
+            <li><a href="#contact-section" aria-label="Takes you to the contacting section (in same tab)">Contact Us</a></li>
         </ul>
     </nav>
     </header>
@@ -35,7 +35,7 @@
             <p>Help us make make sure everyone gets the help they need</p>
         </div>
         <div id="press-here">
-            <h1 id="donate-button"><a href="donation.html">Donate</a></h1>
+            <h1 id="donate-button"><a href="#donation-section" aria-label="Takes you to the Donation section (in same tab)">Donate</a></h1>
         </div>
     </section>
     
@@ -62,7 +62,7 @@
         <div id="donation-div">
             <div id="help-form">
                 
-                <form id="donation-form" action="donated.html" method="get">
+                <form id="donation-form" action="thank-you.html" method="get">
                     <label for="full-name">Full Name</label>
                     <hr>
                     <input type="text" id="full-name" name="full-name" required>
@@ -176,7 +176,7 @@
                         },
                         onApprove: function(data, actions) {
                           return actions.order.capture().then(function(orderData) {
-                            actions.redirect('donated.html')
+                            actions.redirect('thank-you.html')
                             // Full available details
                             console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
                   
@@ -211,33 +211,32 @@
         <section id="contact-section">
             <h2>Ask Us Anything</h2>
             <div>
-                <form action="" id="contact-form">
+                <form action="thank-you.html" method="get" id="contact-form">
                     <label for="name">Name</label>
                     <hr>
-                    <input class="inputs" type="text" id="name" name="name">
+                    <input class="inputs" type="text" id="name" name="name" required>
                     <hr>
                     <label for="gmail">Email</label>
                     <hr>
-                    <input class="inputs" type="email" id="gmail" name="gmail">
+                    <input class="inputs" type="email" id="gmail" name="gmail" required>
                     <hr>
                     <label for="message">Your Message</label>
                     <hr>
-                    <textarea class="inputs" name="message" id="message" rows="5%"></textarea>
+                    <textarea class="inputs" name="message" id="message" rows="5%"></textarea required>
                     <hr>
-                    <label for="send"></label>
                     <input value="Send" type="submit" id="send" name="send">
                 </form>
             </div>
         </section>
     <footer>
         <div id="links">
-            <a href="https://facebook.com/" target="_blank" rel="noopener">
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Takes you to our Facebook page (in a new tab)">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Takes you to our Instagram page (in a new tab)">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener">
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Takes you to our Twitter page (in a new tab)">
                 <i class="fa-brands fa-twitter"></i>
             </a>
         </div>
