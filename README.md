@@ -40,7 +40,7 @@ To make it all alittle diffrent I used fonts from [Google Fonts](https://fonts.g
 * Navigation bar works as intended and responds to diffrent screen sizes and stays on the top of your screen at all times
 ![Navigation bar](readme-pic/header-nav.png)
 * Also reacts to hovering as to make it easier to see what you are about to click
-![Navingation hover](readme-pic/nav-hover-png)
+![Navingation hover](readme-pic/nav-hover.png)
 
 ### Landing Page
 
