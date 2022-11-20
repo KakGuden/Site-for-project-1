@@ -24,10 +24,9 @@ I plan on making a home page with basic information about the site and places to
 ## Design Choices
 
 ### The Colors
-#00194c text
-#9f540f bg
-#553261 text
-#6d9461 bg
+* #9f540f Mostly used for backgrounds for divs
+* #072f7e Used for text on "#9f540f" backgrounds and as outlines
+* #6d9461 Used for backgrounds
 
 ### Font choices
 To make it all alittle diffrent I used fonts from [Google Fonts](https://fonts.google.com/ "Google Fonts") and decided to go for [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?query=rob "Roboto Slab font") for the basic text as I feel it looks clean and just sits right with me while I went with [Roboto](https://fonts.google.com/specimen/Roboto "Roboto font") for my h1,h2 because it goes well with Roboto Slab and has the same clean look that I
@@ -77,12 +76,15 @@ everything respons properly to diffrent screen sizes and is just as accesible an
 during testing I noticed that the paypal feature I added was creating errors on the W3C Validator so I tried to resolve this issue but
 even with the normal code given by paypal it wouldn't let you log in which I found very strange.
 
+## Lighthouse
+![Lighthouse](readme-pic/lighthouse.png)
+
 ## Validator Test
 
 ### HTML
-* No errors going through the offical 
+* No errors going through the offical [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkakguden.github.io%2FSite-for-project-1%2F)
 ### CSS
-* No errors going through the offical
+* No errors going through the offical [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkakguden.github.io%2FSite-for-project-1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ## Unfixed Bugs
 Bug with paypal option not letting you log in and says that some details are missing even when using the default code provided by paypal
@@ -97,5 +99,6 @@ Link to site - https://kakguden.github.io/Site-for-project-1/
 ## Content
 * Paypal button was take from the offical paypal site
 * Icons used in the footer where taken from - https://fontawesome.com/
+* Fonts used where taken from - https://fonts.google.com/
 ## Media
 * Images used was taken from - https://www.pexels.com/
