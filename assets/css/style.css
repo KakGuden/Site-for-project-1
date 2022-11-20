@@ -47,7 +47,7 @@ header li{
 #img{
     background: #000000;
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 2000;
 }
@@ -350,7 +350,7 @@ footer h4{
         padding: 0;
     }
     #about{
-        width: 100%;
+        width: 95%;
     }
     #main{
         height: 60rem;
@@ -360,6 +360,8 @@ footer h4{
     }
     #about-us{
      height: 40rem;
+     outline-offset: -5px;
+     outline-width: 5px;
     }
 }
 @media (max-width: 600px) {
@@ -424,7 +426,7 @@ footer h4{
         top: 25rem;
         right: 25%  ;
         width: 100%;
-        padding-left: 0;
+        padding-right: 0;
         text-align: center;
     }
 }
@@ -433,9 +435,10 @@ footer h4{
         left: 18%;
     }
     #why-here,#why-donate{
+        align-items: center;
         height: 25rem;
-        width: 100%;
-        left: 0;
+        width: 90%;
+        left: 5%;
     }
     #donation-section h2{
         font-size: 150%;
