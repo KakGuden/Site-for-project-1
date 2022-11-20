@@ -52,7 +52,7 @@ To make it all alittle diffrent I used fonts from [Google Fonts](https://fonts.g
 * Simple about us page with a small amount of information and reason for creating the site
 ![About page](readme-pic/about-us.png)
 
-### Donation page
+### Donation Page
 * Options to donate via card or paypal
 * Small text for reasons to donate
 ![Donation page](readme-pic/donation-section.png)
@@ -65,3 +65,8 @@ To make it all alittle diffrent I used fonts from [Google Fonts](https://fonts.g
 * Links to social that opens in a new tap
 * Copyright
 ![Footer](readme-pic/footer.png)
+
+### Thank You Page
+* Seperate html that you get sent to after making a donation or sending a message
+* It has a thank you and a button to send you back to the main page
+![Thank You Page](readme-pic/thank-you-page.png)
