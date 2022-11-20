@@ -38,12 +38,30 @@ To make it all alittle diffrent I used fonts from [Google Fonts](https://fonts.g
 ## Existing Features
 
 ### Nav Bar/Header
-Navigation bar works as intended and responds to diffrent screen sizes and stays on the top of your screen at all times
+* Navigation bar works as intended and responds to diffrent screen sizes and stays on the top of your screen at all times
 ![Navigation bar](readme-pic/header-nav.png)
-Also reacts to hovering as to make it easier to see what you are about to click
+* Also reacts to hovering as to make it easier to see what you are about to click
 ![Navingation hover](readme-pic/nav-hover-png)
 
 ### Landing Page
 
-The landing page is an image of a forest with some information on what the site is about and why to use it
+* The landing page is an image of a forest with some information on what the site is about and why to use it
 ![Home page](readme-pic/home-page.png)
+
+### About Us
+* Simple about us page with a small amount of information and reason for creating the site
+![About page](readme-pic/about-us.png)
+
+### Donation page
+* Options to donate via card or paypal
+* Small text for reasons to donate
+![Donation page](readme-pic/donation-section.png)
+
+### Contact Us 
+* Provieds a way to reach out and have any of your questions answered
+![Contact Us](readme-pic/contact-page.png)
+
+### Footer
+* Links to social that opens in a new tap
+* Copyright
+![Footer](readme-pic/footer.png)
