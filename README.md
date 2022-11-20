@@ -70,3 +70,32 @@ To make it all alittle diffrent I used fonts from [Google Fonts](https://fonts.g
 * Seperate html that you get sent to after making a donation or sending a message
 * It has a thank you and a button to send you back to the main page
 ![Thank You Page](readme-pic/thank-you-page.png)
+
+# Testing
+For testing I have navigated through all the combinations of actions you could do and tried to push it,
+everything respons properly to diffrent screen sizes and is just as accesible and clear with no issues at all,
+during testing I noticed that the paypal feature I added was creating errors on the W3C Validator so I tried to resolve this issue but
+even with the normal code given by paypal it wouldn't let you log in which I found very strange.
+
+## Validator Test
+
+### HTML
+* No errors going through the offical 
+### CSS
+* No errors going through the offical
+
+## Unfixed Bugs
+Bug with paypal option not letting you log in and says that some details are missing even when using the default code provided by paypal
+This was not fixed due to lack of time and as of now lack of knowledge over it
+
+# Deployment
+The site was deployed onto github by uploading the code into a github repository and from there making the repository public so I could go into the page tab in the settings, from there selecting the source as the master branch and saving.
+
+Link to site - https://kakguden.github.io/Site-for-project-1/
+
+# Credits 
+## Content
+* Paypal button was take from the offical paypal site
+* Icons used in the footer where taken from - https://fontawesome.com/
+## Media
+* Images used was taken from - https://www.pexels.com/
