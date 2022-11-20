@@ -21,6 +21,8 @@ I plan on making a home page with basic information about the site and places to
 * That you can actully make donations via paypal (try to make it automaticly make donations but that would be another free time project for me to work on)
 * Everything looks good on diffrent screen sizes
 
+![Responsive Screen](readme-pic/responsive-device.png)
+
 ## Design Choices
 
 ### The Colors
